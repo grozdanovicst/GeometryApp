@@ -41,7 +41,7 @@ namespace GeometryApp
                         return;
                     }
                     double c = a * a + b * b;
-                    Console.WriteLine("Hipotenuza iznosi: " + Math.Sqrt(c) + "(cm)");
+                    Console.WriteLine("Hipotenuza iznosi: " + Math.Sqrt(c) + "cm");
                     break;
                 case 2:
                     Console.WriteLine("Unesite duzinu prve stranice (cm): ");
@@ -64,7 +64,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Povrsina pravouglog trougla iznosi: " + (a * b) / 2);
+                    Console.WriteLine("Povrsina pravouglog trougla iznosi: " + (a * b) / 2 + "cm");
                     break;
                 case 3:
                     int hb = 0;
@@ -88,7 +88,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Povrsina jednakokrakog trougla iznosi: " + (b * hb) / 2);
+                    Console.WriteLine("Povrsina jednakokrakog trougla iznosi: " + (b * hb) / 2 + "cm");
                     break;
                 case 4:
                     Console.WriteLine("Unesite duzinu stranice (cm): ");
@@ -101,7 +101,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Povrsina kvadrata iznosi: " + (a * a));
+                    Console.WriteLine("Povrsina kvadrata iznosi: " + (a * a) + "cm");
                     break;
                 case 5:
                     Console.WriteLine("Unesite duzinu stranice (cm): ");
@@ -114,7 +114,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Povrsina sestougla iznosi: " + ((3 * Math.Sqrt(3)) / 2) * (a * a));
+                    Console.WriteLine("Povrsina sestougla iznosi: " + ((3 * Math.Sqrt(3)) / 2) * (a * a) + "cm");
                     break;
                 default:
                     Console.WriteLine("Nepostojeca operacija.");
