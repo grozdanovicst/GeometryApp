@@ -20,7 +20,7 @@ namespace GeometryApp
                 case 1:
                     int a = 0;
                     int b = 0;
-                    Console.WriteLine("Unesite duzinu prve stranice broj: ");
+                    Console.WriteLine("Unesite duzinu prve stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out a);
@@ -30,7 +30,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Unesi duzinu druge stranice broj: ");
+                    Console.WriteLine("Unesi duzinu druge stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out b);
@@ -41,10 +41,10 @@ namespace GeometryApp
                         return;
                     }
                     double c = a * a + b * b;
-                    Console.WriteLine("Hipotenuza iznosi: " + Math.Sqrt(c));
+                    Console.WriteLine("Hipotenuza iznosi: " + Math.Sqrt(c) + "(cm)");
                     break;
                 case 2:
-                    Console.WriteLine("Unesite duzinu prve stranice broj: ");
+                    Console.WriteLine("Unesite duzinu prve stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out a);
@@ -54,7 +54,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Unesi duzinu druge stranice broj: ");
+                    Console.WriteLine("Unesi duzinu druge stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out b);
@@ -68,7 +68,7 @@ namespace GeometryApp
                     break;
                 case 3:
                     int hb = 0;
-                    Console.WriteLine("Unesi duzinu  bazne stranice broj: ");
+                    Console.WriteLine("Unesi duzinu bazne stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out b);
@@ -78,7 +78,7 @@ namespace GeometryApp
                         Console.WriteLine("Doslo je do greske: " + ex.Message);
                         return;
                     }
-                    Console.WriteLine("Unesi visinu bazne stranice broj: ");
+                    Console.WriteLine("Unesi visinu bazne stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out hb);
@@ -91,7 +91,7 @@ namespace GeometryApp
                     Console.WriteLine("Povrsina jednakokrakog trougla iznosi: " + (b * hb) / 2);
                     break;
                 case 4:
-                    Console.WriteLine("Unesite duzinu prve stranice broj: ");
+                    Console.WriteLine("Unesite duzinu stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out a);
@@ -104,7 +104,7 @@ namespace GeometryApp
                     Console.WriteLine("Povrsina kvadrata iznosi: " + (a * a));
                     break;
                 case 5:
-                    Console.WriteLine("Unesite duzinu prve stranice broj: ");
+                    Console.WriteLine("Unesite duzinu stranice (cm): ");
                     try
                     {
                         int.TryParse(Console.ReadLine(), out a);
